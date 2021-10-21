@@ -24,14 +24,14 @@ function setup() {
 
 function gotPoses(results)
 {
-    if(results.lenght > 0)
+    if(results.length > 0)
     {
         console.log(results);
-        scoreLeftWrist = results[0].pose.keypoint[9].score;
+        scoreLeftWrist = results[0].pose.keypoints[9].score;
         console.log("scoreLeftWrist = " + scoreLeftWrist);
 
         console.log(results);
-        scoreRightWrist = results[0].pose.keypoint[9].score;
+        scoreRightWrist = results[0].pose.keypoints[9].score;
         console.log("scoreRightWrist = " + scoreRightWrist);
 
         leftWristX = results[0].pose.leftWrist.x;
